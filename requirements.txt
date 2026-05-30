@@ -1,0 +1,19 @@
+numpy
+pandas
+scikit-learn==1.3.2 
+fastapi[standard]
+uvicorn
+pytest
+requests
+sqlalchemy
+psycopg2-binary
+alembic
+pydantic
+passlib # used for password hashing
+bcrypt==4.0.1 # stable else bcrypt__truncate_error
+authlib # used for OAuth2 and JWT (contains Jose handling)
+redis
+httpx # async request supported
+locust
+prometheus-fastapi-instrumentator
+snakeviz
