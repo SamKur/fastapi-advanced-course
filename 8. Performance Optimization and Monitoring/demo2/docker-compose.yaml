@@ -1,6 +1,4 @@
-version: "3.8"
-
-services:
+services:   # run this using -> docker compose up --build
   fastapi:
     build:
       context: .
@@ -15,7 +13,7 @@ services:
 
   prometheus:
     image: prom/prometheus
-    container_name: prometheus
+    # container_name: prometheus  # error as previously did same container name, so pls auto generate
     volumes:
       - ./prometheus/prometheus.yaml:/etc/prometheus/prometheus.yaml
     ports:
