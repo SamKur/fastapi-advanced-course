@@ -3,6 +3,13 @@ from fastapi.security import OAuth2PasswordBearer
 
 app = FastAPI()
 
+# Authentication verifies who you are (AuthN)
+# Authorization determines what you can do (AuthZ)
+
+# OAuth 2.0 is an industry-standard
+# authorization (not authentication) protocol that allows third-party applications to access user data
+# on a server (like Google or Facebook) without ever exposing the user's password
+
 # 1. Define the Security Scheme. 
 # tokenUrl tells Swagger UI where to send the username/password to get a token.
 oauth2_scheme = OAuth2PasswordBearer(tokenUrl='mera_token') 

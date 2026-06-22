@@ -1,6 +1,7 @@
 import pytest
 from app.logic import is_eligible_for_loan
 
+# activate venv, cd to unit-testing folder
 # pytest tests/ -- to run all tests in the 'tests' directory    INSIDE THIS ->
 # test_*.py *_test.py (ignores most files including like .venv, .git, or build) INSIDE THIS ->
 # def test_*, class Test* without __init__
